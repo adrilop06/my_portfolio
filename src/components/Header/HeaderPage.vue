@@ -2,6 +2,7 @@
     
     <div class="container-header">
       <crt></crt>
+      
         <div class="star-container">
           <div id='stars'></div>
           <div id='stars2'></div>
@@ -536,26 +537,11 @@
 
 import Wave from "../Header/Wave.vue"
 import Crt from "../Crt.vue"
-
 import gsap from "gsap";
 export default {
     components: {Wave, Crt},
     name:'HeaderPage',
- /*.h{
-      background: linear-gradient(to bottom, rgb(82, 79, 97) 0%, 
-      rgb(32, 6, 128) 50%, rgb(0, 0, 0) 100%);
-      height:810px;
-      } 
-    
-     <img class="build1"  src="../../../images/city.png">
-       <img class="b2"  src="../../../images/b2.png">
-       <img class="b1"  src="../../../images/b1.png">
-       <img class="e1"  src="../../../images/1e.png">
-       <img class="v"  src="../../../images/12.png">
-      
 
-       <svg class="imgHeader" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  viewBox="0 0 2000 2000">
-      */
   mounted: function(){
   
     gsap.timeline({

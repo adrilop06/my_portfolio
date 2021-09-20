@@ -1,10 +1,10 @@
 <template>
 
     <div class="container-welcome">
-       
+       <song-player></song-player>
       <div class="about">&#60;ABOUT ME&#47;&#62;</div>
       <h3 id="hi-title">Hi <span id="world">World!</span></h3>
-      <div class="text-intro"><p id="presentation-text">This is Adrián <span id="last-name">López</span>, a <span id="createWord">creative Multimedia designer</span> from Spain based in Austin, Texas. Currently, i´m studing my last year at the University Oberta of Catalonia. My specialties are web and software engineering, with passion for graphic design.
+      <div class="text-intro"><p id="presentation-text">This is Adrián <span id="last-name">López</span>, a <span id="createWord">creative Multimedia designer</span> from Spain based in Austin, Texas. Currently, i´m studing my last year at the University Oberta of Catalonia. My  specialties are web and software engineering, with passion for graphic design.
       </p></div>
       <div id="my-photo"><photo></photo></div>
     
@@ -15,7 +15,7 @@
 </template>
 <script>
 import Photo from './Photo.vue'
-
+import SongPlayer from '../Header/SongPlayer.vue'
 
 /*<div class="noise"></div>
     <div class="overlay"></div>
@@ -23,7 +23,7 @@ import Photo from './Photo.vue'
 export default {
   
     name:'WelcomePage',
-     components: { Photo},
+     components: { Photo, SongPlayer},
      data() {
     return {
       

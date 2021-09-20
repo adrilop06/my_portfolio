@@ -78,10 +78,10 @@ export default {
   
   #sk-section{
     position:absolute;
-    font-size:2.5vh;
+    font-size:3vw;
     font-weight: bold;
     left:5%;
-    top:0%;
+    top:2%;
     color:rgb(9, 212, 219);
     opacity:.3;
     font-family: 'VT323', monospace;
