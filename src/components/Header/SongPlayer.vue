@@ -3,7 +3,7 @@
     <audio id="audio-player" autoplay loop>
         <source src="../../../songs/song.mp3" type="audio/mpeg">
     </audio>
-    <button  @click="toggleAudio()" ><i :class='icon' ></i></button>
+    <button class="button-music" @click="toggleAudio()" >{{icon}}</button>
 </div>
 </template>
 <script>
@@ -11,7 +11,8 @@ export default {
     name:'SongPlayer',
      data() {
         return {
-              icon: "",
+              icon: 'Pause',
+              sound:true
         }
     },
    
@@ -19,12 +20,15 @@ export default {
     methods: {
     toggleAudio() {
         var audio = document.getElementById("audio-player");
-        if (audio.paused) {
+        if (this.sound==false) {
             audio.play();
-            this.icon="fas fa-pause"
+            this.sound=true;
+            this.icon="Pause"
         } else {
             audio.pause();
-            this.icon ="fas fa-play"
+            this.sound=false;
+            this.icon ="Play"
+            console.log(this.icon)
         }
     },
     
@@ -34,7 +38,11 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-   .container-song{
-       
+   .button-music{
+        background: none;
+        color: white;
+        border: none;
+        cursor: pointer;
    }
+   
 </style>

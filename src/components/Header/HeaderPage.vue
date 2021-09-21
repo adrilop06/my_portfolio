@@ -2,7 +2,6 @@
     
     <div class="container-header">
       <crt></crt>
-      
         <div class="star-container">
           <div id='stars'></div>
           <div id='stars2'></div>
@@ -11,6 +10,7 @@
       <wave class="moon"></wave>
       <div class="header-contain">
 
+        <song-player></song-player>
       <div class="building1R" >
         <svg id="Capa_31" data-name="Capa 31" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  viewBox="0 0 993 3385.38">
           <defs>
@@ -534,12 +534,12 @@
 </template>
 
 <script>
-
+import SongPlayer from "./SongPlayer.vue"
 import Wave from "../Header/Wave.vue"
 import Crt from "../Crt.vue"
 import gsap from "gsap";
 export default {
-    components: {Wave, Crt},
+    components: {Wave, Crt, SongPlayer},
     name:'HeaderPage',
 
   mounted: function(){
@@ -555,7 +555,7 @@ export default {
     })
  .to(".name-title", { opacity: 0, duration: 1})
 
-.to(".star-container", { opacity: 0, duration: 1})
+.to(".star-container", { opacity: 0.5, duration: 1})
 
 
 
@@ -634,7 +634,6 @@ export default {
         position: absolute;
         left: 0;
         top: 0;
-        
         max-width: 2000px;
         width: 100%;
         height: 100%;
