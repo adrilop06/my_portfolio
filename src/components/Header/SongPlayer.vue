@@ -1,7 +1,7 @@
 <template>
 <div>
-    <audio id="audio-player" autoplay loop>
-        <source src="../../../songs/song.mp3" type="audio/mpeg">
+    <audio id="audio-player" src="../../../songs/song.mp3" type="audio/mp3" preload autoplay loop>
+        
     </audio>
     <button class="button-music" @click="toggleAudio()" >{{icon}}</button>
 </div>
@@ -33,7 +33,9 @@ export default {
     },
     
     },
- 
+    mounted:{
+
+    }
     
 }
 </script>
