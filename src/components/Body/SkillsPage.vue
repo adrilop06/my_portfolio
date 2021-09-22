@@ -47,7 +47,7 @@ export default {
      
        data() {
         return {
-          height: 300,
+          height:300,
           isShow: {
             'ChartWeb': false,
             'ChartGame': false,
