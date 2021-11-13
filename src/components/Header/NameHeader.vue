@@ -21,9 +21,9 @@ export default {
         font-family: 'RoadRage';
         font-style: normal;
         font-weight: normal;
-        src: local('RoadRage'), url('http://coding-dude.com/wp/wp-content/uploads/Road_Rage.woff') format('woff') ;
+        src: local('RoadRage'), url('https://coding-dude.com/wp/wp-content/uploads/Road_Rage.woff') format('woff') ;
     }
-
+    @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
     @import url(https://fonts.googleapis.com/css?family=Titillium+Web:900);
     @import url(https://fonts.googleapis.com/css?family=Mr+Dafoe);
     @import url(https://fonts.googleapis.com/css2?family=VT323&display=swap);
