@@ -39,10 +39,11 @@ export default {
         return {
       isHidden: true
     }
+    
   },
    methods: {
     gotoLinked() {
-      window.open("linkedin.com/in/adrian-lopez-pazos-38a44516b");
+      window.open("https://www.linkedin.com/in/adrian-lopez-pazos-38a44516b");
     },
   },
  
