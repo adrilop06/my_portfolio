@@ -8,8 +8,7 @@
         <button class="btn-primary email-icon" v-on:click="isHidden = !isHidden" v-if="isHidden"><i class="far fa-envelope"></i></button>
             </div>
             <div class="row-content">
-        
-        <a href="linkedin.com/in/adrian-lopez-pazos-38a44516b"><button class="btn-primary linkedin-icon" v-if="isHidden"><i class="fab fa-linkedin-in"></i></button></a>
+        <button @click="gotoLinked()" class="btn-primary linkedin-icon" v-if="isHidden" target="_blank" rel="noreferrer noopener"><i class="fab fa-linkedin-in"></i></button>
             </div>
         </div> 
             <div v-if="!isHidden" class="card-contact-container">
@@ -40,7 +39,12 @@ export default {
         return {
       isHidden: true
     }
-  }
+  },
+   methods: {
+    gotoLinked() {
+      window.open("linkedin.com/in/adrian-lopez-pazos-38a44516b");
+    },
+  },
  
 }
 </script>
