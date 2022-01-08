@@ -1,5 +1,5 @@
 <template>
-<div class="card">
+<div v-cloak class="card">
   <div class="ds-skill">
     <h6 class="chart-tittle">HIGH SCORE</h6>
     <div class="skill photoshop">

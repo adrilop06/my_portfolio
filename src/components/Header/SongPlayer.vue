@@ -1,8 +1,9 @@
 <template>
 <div>
-    <audio id="audio-player" src="../../../songs/song.mp3" type="audio/mp3" preload autoplay loop>
-        
+    <audio id="audio-player"  preload loop autoplay>
+        <source src="../../../songs/song.mp3" type="audio/mp3"/>
     </audio>
+    
     <button class="button-music" @click="toggleAudio()" >{{icon}}</button>
 </div>
 </template>
@@ -11,8 +12,8 @@ export default {
     name:'SongPlayer',
      data() {
         return {
-              icon: 'Pause',
-              sound:true
+              icon: 'Play',
+              sound:false
         }
     },
    
@@ -34,7 +35,6 @@ export default {
     
     },
     mounted:{
-
     }
     
 }

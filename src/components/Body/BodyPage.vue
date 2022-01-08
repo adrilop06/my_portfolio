@@ -1,6 +1,6 @@
 <template>
     <div>
-    <div class="container-body">
+    <div v-cloak class="container-body">
         <svg id="intro-svg" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  viewBox="0 0 1924.07 1609.49">
         
   <defs>
@@ -139,7 +139,7 @@ export default {
         position:relative;
         overflow: hidden;
         margin-top:215%;
-        background:rgb(23, 5, 41);
+        background-color:rgb(23, 5, 41);
         @include for-1200 {    
           margin-top:360vh;
         }
