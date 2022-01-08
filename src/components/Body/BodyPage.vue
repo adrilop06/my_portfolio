@@ -80,7 +80,7 @@ import WelcomePage from './WelcomePage.vue'
 import ProjectsPage from './ProjectsPage.vue'
 
 export default {
-    //Hello, Cards, SkillsButtons, Chart, 
+    //Hello, Cards, SkillsButtons, Chart, welcomepage
     components: { SkillsPage, FooterPage, WelcomePage, ProjectsPage},
     name:'BodyPage',
     data() {
