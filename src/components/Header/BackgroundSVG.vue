@@ -519,16 +519,17 @@
     import gsap from "gsap";
     import Wave from "../Header/Wave.vue"
     import SongPlayer from "./SongPlayer.vue"
+    
 export default {
     components: {Wave, SongPlayer},
     name:'BackgroundSVG',
-
+    
     mounted: function(){
     gsap.timeline({
       scrollTrigger: {
         trigger: ".container-header",
-        start: "5%",
-        end: "+=400%",
+        start: "0%",
+        end: "100%",
         scrub: true,
         
       }
@@ -538,22 +539,22 @@ export default {
 .to(".name-title", { opacity: 0, duration: 1})
 
 //.fromTo("#me", {y:200},{ duration: 3, y: 55 , ease: "power2.out" }, 2)
-.fromTo(".building1R", {y:2000},{ duration: 3, y: -200 , ease: "power2.out" }, 2)
-.fromTo(".building1L", {y:2000},{ duration: 3, y: -200 , ease: "power2.out" }, 2)
-.fromTo(".bridge", {y:2000},{ duration: 3, y: 0 , ease: "power2.out" }, 2)
-.fromTo("#train", { x:3200},{ duration: 3, x:-3500, ease: "power2.out" }, 3)
-.fromTo("#letterW", {y:2000},{ duration: 3, y: 0  , ease: "power2.out" }, .1)
-.fromTo("#letterE1", {y:2000},{ duration: 3, y: 0  , ease: "power2.out" }, .1)
-.fromTo("#letterL", {y:2000},{ duration: 3, y: 0  , ease: "power2.out" }, .1)
-.fromTo("#letterC", {y:2000},{ duration: 3, y: 0  , ease: "power2.out" }, .1)
-.fromTo("#letterO", {y:2000},{ duration: 3, y: 0  , ease: "power2.out" }, .1)
-.fromTo("#letterM", {y:2000},{ duration: 3, y: 0  , ease: "power2.out" }, .1)
-.fromTo("#letterE2", {y:2000},{ duration: 3, y: 0  , ease: "power2.out" }, .1)
-.fromTo(".building2L", {y:2000},{ duration: 3, y: 0 , ease: "power2.out" },1.9)
-.fromTo(".building2R", {y:2000},{ duration: 3, y: 0 , ease: "power2.out" },1.8)
-.fromTo(".building3L", {y:2000},{ duration: 3, y: 0 , ease: "power2.out" }, 1.9)
-.fromTo(".building3R", {y:2000},{ duration: 3, y: 0 , ease: "power2.out" }, 1.9)
-.fromTo(".backgroundCity", {y:2000},{ duration: 3, y: 250 , ease: "power2.out" }, 1.7)
+.fromTo(".building1R", {y:1000},{ duration: 3, y: -100 , ease: "power0.easeNone" }, 2)
+.fromTo(".building1L", {y:1000},{ duration: 3, y: -200 , ease: "power0.easeNone" }, 2)
+.fromTo(".bridge", {y:1000},{ duration: 3, y: 0 , ease: "power0.easeNone" }, 2.2)
+.fromTo("#train", { x:2500},{ duration: 3, x:-3500, ease: "power0.easeNone" }, 3)
+.fromTo("#letterW", {y:1000},{ duration: 3, y: 0  , ease: "power0.easeNone" }, .1)
+.fromTo("#letterE1", {y:1000},{ duration: 3, y: 0  , ease: "power0.easeNonet" }, .1)
+.fromTo("#letterL", {y:1000},{ duration: 3, y: 0  , ease: "power0.easeNone" }, .1)
+.fromTo("#letterC", {y:1000},{ duration: 3, y: 0  , ease: "power0.easeNone" }, .1)
+.fromTo("#letterO", {y:1000},{ duration: 3, y: 0  , ease: "power0.easeNone" }, .1)
+.fromTo("#letterM", {y:1000},{ duration: 3, y: 0  , ease: "power0.easeNone" }, .1)
+.fromTo("#letterE2", {y:1000},{ duration: 3, y: 0  , ease: "power0.easeNone" }, .1)
+.fromTo(".building2L", {y:1000},{ duration: 3, y: 0 , ease: "power0.easeNone" },2.2)
+.fromTo(".building2R", {y:1000},{ duration: 3, y: 0 , ease: "power0.easeNone" },2.2)
+.fromTo(".building3L", {y:1000},{ duration: 3, y: 0 , ease: "power0.easeNone" }, 2.2)
+.fromTo(".building3R", {y:1000},{ duration: 3, y: 0 , ease: "power0.easeNone" }, 2.2)
+.fromTo(".backgroundCity", {y:1200},{ duration: 3, y: 260 , ease: "power0.easeNone" }, 2)
 
 
 
@@ -571,6 +572,7 @@ export default {
 
 <style lang="scss" scoped>
 
+
   .container-header{
         position: fixed !important;
         background: linear-gradient(to bottom, rgb(31, 8, 95)0%, 
@@ -581,6 +583,7 @@ export default {
         height: 100vh;
         overflow: hidden;
         z-index: 5;
+         
         
   }
 
@@ -592,6 +595,7 @@ export default {
       position: absolute;
       display: block;
       height: 2000px;
+      
   }
 
   .building1L{
@@ -602,6 +606,7 @@ export default {
       position: absolute;
       display: block;
       height: 2000px;
+      
   }
 
   .building2R{
@@ -612,6 +617,7 @@ export default {
       position: absolute;
       display: block;
       height: 2000px;
+     
   }
 
   .building2L{
@@ -622,6 +628,7 @@ export default {
       position: absolute;
       display: block;
       height: 2000px;
+     
   }
   .building3R{
     width: 30%;
@@ -631,6 +638,7 @@ export default {
       position: absolute;
       display: block;
       height: 2000px;
+   
   }
 
   .building3L{
@@ -641,6 +649,7 @@ export default {
       position: absolute;
       display: block;
       height: 2000px;
+    
   }
 
   .backgroundCity{
@@ -651,6 +660,7 @@ export default {
       position: absolute;
       display: block;
       height: 2000px;
+      
   }
 
   .bridge{
@@ -660,8 +670,9 @@ export default {
       z-index: 15;
       position: absolute;
       height: 2000px;
+     
   }
-
+ 
    #letterW:hover{
     animation: letter 0.1s alternate ease-out infinite;
   }

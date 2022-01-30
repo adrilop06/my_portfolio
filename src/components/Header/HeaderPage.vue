@@ -82,40 +82,14 @@ export default {
   }
   .header-contain{
         position: absolute;
-        left: 0;
+       
         top: 0;
         max-width: 2000px;
-        width: 100%;
+        
         height: 100%;
-
-        @include for-300 {    
-          width: 120%;
-          left:-9%;
-        }
-        @include for-400 {    
-          width: 120%;
-          left:-9%;
-        }
-        @include for-500 {    
-          width: 120%;
-          left:-9%;
-        }
-        @include for-600 {    
-          width: 120%;
-          left:-9%;
-        }
-        @include for-700 {    
-          width: 120%;
-          left:-9%;
-        }
-        @include for-800 {    
-          width: 120%;
-          left:-9%;
-        }
-        @include for-1200 {    
-          width: 120%;
-          left:-9%;
-        }
+        width: 120%;
+        left:-9%;
+       
         
   }
  

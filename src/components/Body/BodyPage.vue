@@ -1,5 +1,6 @@
 <template>
-    <div>
+    <div class="contain">
+      <div class="contenido">
     <div v-cloak class="container-body">
         <svg id="intro-svg" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  viewBox="0 0 1924.07 1609.49">
         
@@ -69,7 +70,7 @@
         <projects-page></projects-page>
         <footer-page></footer-page>
         
-        
+    </div>  
     </div>
 </template>
 <script>
@@ -81,11 +82,48 @@ import ProjectsPage from './ProjectsPage.vue'
 
 export default {
     //Hello, Cards, SkillsButtons, Chart, welcomepage
+
     components: { SkillsPage, FooterPage, WelcomePage, ProjectsPage},
     name:'BodyPage',
+
     data() {
     return {
-   
+      /*  @include for-1200 {    
+          margin-top:360vh;
+        }
+        @include for-1000 {    
+           margin-top:300vh;
+        }
+        @include for-800 {    
+          margin-top:295vh;
+        }
+        @include for-700 {    
+           margin-top:300vh;
+        }
+        @include for-600 {    
+           margin-top:300vh;
+        }
+        @include for-550 {    
+          margin-top:300vh;
+        }
+        @include for-500 {    
+           margin-top:300vh;
+        }
+
+
+        @include for-450 {    
+          margin-top:130vh;
+        }
+        @include for-400 {    
+          margin-top:130vh;
+        }
+        
+         @include for-350 {    
+          margin-top:300vh;
+        }
+        @include for-300 {    
+          margin-top:675%;
+        }*/
     }
 
     }
@@ -138,43 +176,43 @@ export default {
         height:auto;
         position:relative;
         overflow: hidden;
-        margin-top:215%;
+        margin-top:100%;
         background-color:rgb(23, 5, 41);
         @include for-1200 {    
-          margin-top:360vh;
+          margin-top:135%;
         }
         @include for-1000 {    
-           margin-top:300vh;
+          margin-top:150%;
         }
         @include for-800 {    
-          margin-top:295vh;
+           margin-top:165%;
         }
         @include for-700 {    
-           margin-top:300vh;
+           margin-top:190%;
         }
         @include for-600 {    
-           margin-top:300vh;
+           margin-top:200%;
         }
         @include for-550 {    
-          margin-top:300vh;
+          margin-top:220%;
         }
         @include for-500 {    
-           margin-top:300vh;
+           margin-top:230%;
         }
 
 
         @include for-450 {    
-          margin-top:295vh;
+          margin-top:240%;
         }
         @include for-400 {    
-          margin-top:295vh;
+          margin-top:280%;
         }
         
          @include for-350 {    
-          margin-top:300vh;
+          margin-top:300%;
         }
         @include for-300 {    
-          margin-top:675%;
+          margin-top:347%;
         }
     }
 
