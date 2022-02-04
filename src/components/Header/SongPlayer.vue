@@ -1,6 +1,6 @@
 <template>
 <div>
-    <audio id="audio-player"  preload loop>
+    <audio id="audio-player"  preload loop >
         <source src="../../../songs/song.mp3" type="audio/mp3"/>
     </audio>
     
@@ -13,30 +13,32 @@ export default {
      data() {
         return {
               icon: 'Play',
-              sound:false
+              paused:true
               
         }
     },
    
-    
+    mounted: function() {
+        this.toggleAudio();
+      },
     methods: {
     toggleAudio() {
         var audio = document.getElementById("audio-player");
-        if (this.sound==false) {
+        
+        if (this.paused==false) {
             audio.play();
-            this.sound=true;
+            this.paused=true;
             this.icon="Pause"
         } else {
             audio.pause();
-            this.sound=false;
+            this.paused=false;
             this.icon ="Play"
             console.log(this.icon)
         }
     },
     
     },
-    mounted:{
-    }
+   
     
 }
 </script>

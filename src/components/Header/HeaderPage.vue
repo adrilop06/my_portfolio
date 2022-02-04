@@ -64,16 +64,19 @@
 
 <style lang="scss" scoped>
 
-  
+  @mixin for-1000 {
+      @media (min-width: 1000px) { @content; }
+    }
   .container-header{
         position: relative;
-        
         left: 0;
         top: 0;
         width: 100%;
-        height: 100vh;
-        overflow: hidden;
+        height: 120vh;
         z-index: 5; 
+        @include for-1000 {    
+          height: 80vh;
+        }
   }
   .header-contain{
         width: 100%;
@@ -81,6 +84,7 @@
         position:fixed;
         background: linear-gradient(to bottom, rgb(31, 8, 95)0%, 
         rgb(91, 36, 131) 99%);
+        
   }
 
   .player-song{
