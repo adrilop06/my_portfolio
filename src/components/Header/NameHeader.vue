@@ -36,7 +36,6 @@ export default {
     }
    
     .container-name {
-        
         max-width:100%;
         height:auto;
         position:fixed;
