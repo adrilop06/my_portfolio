@@ -606,111 +606,25 @@
       this.backgroundCity();
       this.bridge();
       this.train();
-      this.letterW();
-      this.letterO();
-      this.letterM();
-      this.letterE1();
-      this.letterE2();
-      this.letterL();
-      this.letterC();
+     
+      gsap.timeline({
+        ScrollTrigger: {
+          trigger: ".contain",
+          start: "0%",
+          end: "100%",
+          scrub: true,
+            
+        }
+      })
+        .fromTo("#letterW", { opacity: 0}, { opacity: 1, duration: 3},1.5)
+        .fromTo("#letterO", { opacity: 0}, { opacity: 1, duration: 3},1.5)
+        .fromTo("#letterM", { opacity: 0}, { opacity: 1, duration: 3},1.5)
+        .fromTo("#letterE1", { opacity: 0}, { opacity: 1, duration: 3},1.5)
+        .fromTo("#letterE2", { opacity: 0}, { opacity: 1, duration: 3},1.5)
+        .fromTo("#letterL", { opacity: 0}, { opacity: 1, duration: 3},1.5)
+        .fromTo("#letterC", { opacity: 0}, { opacity: 1, duration: 3},1.5)
     },
     methods: {
-        letterW() {
-          var action = gsap.fromTo("#letterW", { opacity: 0}, { opacity: 1, duration: 3},1.5)
-          ScrollTrigger.create({
-            trigger: ".letterW",
-            start: "0%",
-            endTrigger: '#intro-svg',
-            end: '10%',
-            scrub: true,
-            animation: action,
-            toggleActions: 'play reverse play reverse'
-          });
-        },
-        letterO() {
-          var action = gsap.fromTo("#letterO", { opacity: 0}, { opacity: 1, duration: 3},1.1)
-          ScrollTrigger.create({
-            trigger: ".letterO",
-            start: " 15%",
-            endTrigger: '#intro-svg',
-            end: '10%',
-            pin: true,
-            scrub: true,
-            pinSpacing: false,
-            animation: action,
-            toggleActions: 'play reverse play reverse'
-          });
-        },
-        letterM() {
-          var action = gsap.fromTo("#letterM", { opacity: 0}, { opacity: 1, duration: 3},2)
-          ScrollTrigger.create({
-            trigger: ".letterM",
-            start: " 15%",
-            endTrigger: '#intro-svg',
-            end: '10%',
-            pin: true,
-            scrub: true,
-            pinSpacing: false,
-            animation: action,
-            toggleActions: 'play reverse play reverse'
-          });
-        },
-        letterE1() {
-          var action = gsap.fromTo("#letterE1", { opacity: 0}, { opacity: 1, duration: 5},3)
-          ScrollTrigger.create({
-            trigger: ".letterE1",
-            start: " 15%",
-            endTrigger: '#intro-svg',
-            end: '10%',
-            pin: true,
-            scrub: true,
-            pinSpacing: false,
-            animation: action,
-            toggleActions: 'play reverse play reverse'
-          });
-        },
-        letterE2() {
-          var action = gsap.fromTo("#letterE2", { opacity: 0}, { opacity: 1, duration: 3},2)
-          ScrollTrigger.create({
-            trigger: ".letterE2",
-            start: " 15%",
-            endTrigger: '#intro-svg',
-            end: '10%',
-            pin: true,
-            scrub: true,
-            pinSpacing: false,
-            animation: action,
-            toggleActions: 'play reverse play reverse'
-          });
-        },
-        letterL() {
-          var action = gsap.fromTo("#letterL", { opacity: 0}, { opacity: 1, duration: 3},2)
-          ScrollTrigger.create({
-            trigger: ".letterL",
-            start: " 15%",
-            endTrigger: '#intro-svg',
-            end: '10%',
-            pin: true,
-            scrub: true,
-            pinSpacing: false,
-            animation: action,
-            toggleActions: 'play reverse play reverse'
-          });
-        },
-        letterC() {
-          var action = gsap.fromTo("#letterC", { opacity: 0}, { opacity: 1, duration: 3},2)
-          ScrollTrigger.create({
-            trigger: ".letterC",
-            start: " 15%",
-            endTrigger: '#intro-svg',
-            end: '10%',
-            pin: true,
-            scrub: true,
-            pinSpacing: false,
-            animation: action,
-            toggleActions: 'play reverse play reverse'
-          });
-        },
         building1R() {
           var action = gsap.to('.b1r', { ease: 'none', duration: 0.25 });
           ScrollTrigger.create({

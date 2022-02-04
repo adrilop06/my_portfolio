@@ -85,7 +85,6 @@
         background: linear-gradient(to bottom, rgb(31, 8, 95)0%, 
         rgb(91, 36, 131) 99%);   
   }
-
   .player-song{
         position: fixed;
         left: 2%;
