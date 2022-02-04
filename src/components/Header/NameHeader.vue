@@ -1,7 +1,7 @@
 <template>
 
 
-    <div class="container-name" >
+    <div v-cloak class="container-name" >
         <div class="name ">ADRIÁN</div>
        
         <div class="last-name glitch glow text " data-glitch="López">López</div>
@@ -11,6 +11,7 @@
     
 </template>
 <script>
+   
 export default {
     name:'NameHeader',
 
@@ -33,13 +34,13 @@ export default {
      
 
    
-        .container-name {
+    .container-name {
         
         max-width:100%;
         height:auto;
         position:fixed;
         top:15%;
-                left:30%;
+        left:30%;
             .name{
                 font-family:'Titillium Web', sans-serif;
                 background-image: -webkit-linear-gradient(#2f353b 0%, #94B6C9 46%, #86DFF5 50%, #ffffff 54%,#9c37ac  58%, #d100b1 90%,#d100b1 100%);
@@ -49,7 +50,6 @@ export default {
                 background-clip: text;
                 font-size:11vw;
                 text-align:center;
-                
                 pointer-events: none;   
             }
           
@@ -85,7 +85,7 @@ export default {
                
             }
            
-        }
+    }
        
     
 

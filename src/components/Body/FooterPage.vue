@@ -1,31 +1,29 @@
 <template>
     <div class="container-footer">
+        <div class="contain">
+            <h2 class="footer-name"><span id="contact">Contact</span> me</h2>
+            <div class="content-footer">
+            <div class="contect-flex">
+                <div class="row-content">
+            <button class="btn-primary email-icon" v-on:click="isHidden = !isHidden" v-if="isHidden"><i class="far fa-envelope"></i></button>
+                </div>
+                <div class="row-content">
+            <button @click="gotoLinked()" class="btn-primary linkedin-icon" v-if="isHidden" target="_blank" rel="noreferrer noopener"><i class="fab fa-linkedin-in"></i></button>
+                </div>
+            </div> 
+                <div v-if="!isHidden" class="card-contact-container">
+                    <form action="https://formsubmit.co/adrianlopezpazos@gmail.com" method="POST">
+                        <button class="btn-primary close-icon-mail" v-on:click="isHidden = !isHidden"><i class="far fa-window-close "></i></button>
+                        <h6 class="contact-me-title">Contact me</h6>
+                        <input class="feedback-input" type="email" name="email" placeholder="Your email" required>
+                        <input class="feedback-input" type="text" name="name" placeholder="Your message" required>
+                        <button class="feedback-input" type="submit">Send</button>
+                    </form>
+                </div>
+            </div>
             
-        <h2 class="footer-name"><span id="contact">Contact</span> me</h2>
-        <div class="content-footer">
-        <div class="contect-flex">
-            <div class="row-content">
-        <button class="btn-primary email-icon" v-on:click="isHidden = !isHidden" v-if="isHidden"><i class="far fa-envelope"></i></button>
-            </div>
-            <div class="row-content">
-        <button @click="gotoLinked()" class="btn-primary linkedin-icon" v-if="isHidden" target="_blank" rel="noreferrer noopener"><i class="fab fa-linkedin-in"></i></button>
-            </div>
-        </div> 
-            <div v-if="!isHidden" class="card-contact-container">
-                <form action="https://formsubmit.co/adrianlopezpazos@gmail.com" method="POST">
-                    <button class="btn-primary close-icon-mail" v-on:click="isHidden = !isHidden"><i class="far fa-window-close "></i></button>
-                    <h6 class="contact-me-title">Contact me</h6>
-                    <input class="feedback-input" type="email" name="email" placeholder="Your email" required>
-                    <input class="feedback-input" type="text" name="name" placeholder="Your message" required>
-                    <button class="feedback-input" type="submit">Send</button>
-                </form>
-            </div>
-        </div>
-        
-        <img  id="background-image" src="../../../images/syntwave.png">
-        
-            
-        
+            <img  id="background-image" src="../../../images/syntwave.png">
+        </div>   
     </div> 
 </template>
 <script>
@@ -68,6 +66,11 @@ export default {
         @include for-800 {    
           height: 100vw;
         }
+    }
+    .contain{
+        max-width: 100%;
+        height: auto;
+        background-color: #0B0314;
     }
     #background-image{
         width:100%;

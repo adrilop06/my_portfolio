@@ -1,7 +1,7 @@
 <template>
-    <div class="contain">
+    <div v-cloak class="contain">
     
-    <div v-cloak class="container-body" >
+    <div class="container-body" >
       
       <div class="b1r">
             <svg id="Capa_31" data-name="Capa 31" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  viewBox="0 0 993 3385.38" >
@@ -510,7 +510,7 @@
           </svg>
           </div>
 
-          <svg id="intro-svg" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  viewBox="0 0 1924.07 1609.49"> 
+          <svg v-cloak id="intro-svg" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  viewBox="0 0 1924.07 1609.49"> 
             <defs>
               <clipPath id="clip-path" transform="translate(2.5 529.99)">
                 <path d="M951.73-519.08s-10,3-11,6-7,5-8,8-7,22-7,28,1,28,2,30-4,5-7,7-28,14-29,17-7,13-7,13-17,55-15,72-5,24,16,44,13,13,13,13-1,10-3,12-2,7,0,10-1,9,0,12,0,13,0,14-3,8-2,10,1,15,1,19-2,18-2,21,.2,6,.2,6h44.64a74.31,74.31,0,0,0,4-13.28c1-6,2.16-17.72,2.16-17.72s1,2,1,8-1,15,0,18a12.62,12.62,0,0,1,.76,5h42.84s3.4-18,3.4-19,3-14,3-18,3-31.48,3-31.48v-9.36l2-.16s-2-6-2-9v-8s6-6,5-7-4.68-5-4.68-5,5.68,0,8.68-3,10-8,9-10,5-5,7-7,8-15,8-16,2-9.36,0-13.68-7-38.32-7-41.32-6-24-6-27-6-17-10-21-20-12-20-12-18-7.24-16.5-8.12,6.5-16.88,6.5-16.88,4-14,3-15-1-21-1-21-7-13.44-8.5-13.72S962.73-518.08,951.73-519.08Z" style="fill: #07020c"/>
@@ -837,21 +837,7 @@
             toggleActions: 'play reverse play reverse'
           });
         },
-
-/*mounted: 
-    function(){
-    gsap.timeline({
-      scrollTrigger: {
-        trigger: ".container-body",
-        start: "-60%",
-        end: "100%",
-        scrub: true,
-        
-      }
-    }).set('.b1r', {position:'fixed', paused:true});},*/
-    
-    //.to(".b1r",{ duration: 50,  yPercent: 100   , ease: "sine.out" }, 3)},
-},
+  },
 }
 
 
@@ -875,6 +861,8 @@
    }
    
     .container-body{
+        max-width: 100%;
+        height:auto;
         margin-top:150%;
         position:relative;
         

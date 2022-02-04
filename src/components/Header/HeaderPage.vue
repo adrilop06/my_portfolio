@@ -1,17 +1,18 @@
 <template>
     
-    <div v-cloak class="container-header">
-      <crt></crt>
-      <wave></wave>
-      <song-player class="player-song"></song-player>
-      <name-header class="name-title"></name-header> 
-      <div class="star-container">
-          <div id='stars'></div>
-          <div id='stars2'></div>
-          <div id='stars3'></div>
-      </div>
-      
-</div>
+  <div class="container-header">
+    <div class="header-contain">
+        <crt></crt>
+        <wave></wave>
+        <song-player class="player-song"></song-player>
+        <name-header class="name-title"></name-header> 
+        <div class="star-container">
+            <div id='stars'></div>
+            <div id='stars2'></div>
+            <div id='stars3'></div>
+        </div>
+    </div>  
+  </div>
       
       
 
@@ -38,7 +39,7 @@
             trigger: ".container-header",
             start: " 0%",
             endTrigger: '.container-header',
-            end: '50%',
+            end: '80%',
             scrub:true,
             animation: action,
             toggleActions: 'play reverse play reverse'
@@ -47,7 +48,7 @@
         stars() {
           var action = gsap.fromTo(".star-container", {opacity:0},{ opacity: 1, duration: 5},3)
           ScrollTrigger.create({
-            trigger: ".container-header",
+            trigger: ".header-contain",
             start: " 0%",
             endTrigger: '.container-header',
             end: '50%',
@@ -65,36 +66,36 @@
 
   
   .container-header{
-        position: fixed !important;
-        background: linear-gradient(to bottom, rgb(31, 8, 95)0%, 
-        rgb(91, 36, 131) 99%);
+        position: relative;
+        
         left: 0;
         top: 0;
         width: 100%;
-        height: 101%;
+        height: 100vh;
         overflow: hidden;
         z-index: 5; 
   }
   .header-contain{
-        position: absolute;
-        top: 0;
-        max-width: 2000px;
+        width: 100%;
         height: 100%;
-        width: 120%;
-        left:-9%;    
+        position:fixed;
+        background: linear-gradient(to bottom, rgb(31, 8, 95)0%, 
+        rgb(91, 36, 131) 99%);
   }
+
   .player-song{
         position: fixed;
         left: 2%;
         top: 2%;
         z-index:100000000000;
   }
+  
   .star-container{
-    z-index:100000000000000000000000000000;
-    max-width:100%;
-    height: 101%;
-    position:absolute;
-    top:0;
+        z-index:100000000000000000000000000000;
+        max-width:100%;
+        height: 101%;
+        position:absolute;
+        top:0;
   }
 
   #stars {

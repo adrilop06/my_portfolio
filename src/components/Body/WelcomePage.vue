@@ -1,23 +1,19 @@
 <template>
 
-    <div class="container-welcome">
+  <div class="container-welcome">
+    <div class="contain">
       <div class="about">&#60;ABOUT ME&#47;&#62;</div>
       <h3 id="hi-title">Hi <span id="world">World!</span></h3>
       <div class="text-intro"><p id="presentation-text">This is Adrián <span id="last-name">López</span>, a <span id="createWord">creative Multimedia designer</span> from Spain based in Austin, Texas. Currently, I´m studing my last year at University Oberta of Catalonia. My specialties are web and software engineering, with passion for graphic design.
       </p></div>
       <div id="my-photo"><photo></photo></div>
-    
-      
-  
+    </div>
   </div>
   
 </template>
 <script>
 import Photo from './Photo.vue'
 
-/*<div class="noise"></div>
-    <div class="overlay"></div>
-    <div class="overlay glitch"></div> */
 export default {
   
     name:'WelcomePage',
@@ -31,27 +27,31 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
- @import url(https://fonts.googleapis.com/css2?family=VT323&display=swap);
+ 
+  @import url(https://fonts.googleapis.com/css2?family=VT323&display=swap);
 
  
-@mixin for-600 {
+  @mixin for-600 {
       @media (max-width: 600px) { @content; }
-    }
+  }
 
 
-.container-welcome{
+  .container-welcome{
     max-width: 100%;
     height: 60vw;
     position: relative;
     background: url('../../../images/backgroundimage.png');
     margin-top:-50%;
     z-index:1000000000000;
-     @include for-600 {    
-          height: 100vw;
-          
-      }
+    @include for-600 {    
+      height: 100vw;  
+    }
   }
-
+  .contain{
+    max-width: 100%;
+    height: auto;
+    background-color: #0B0314;
+  }
   .about{
     position:absolute;
     font-size:3vw;
@@ -92,10 +92,10 @@ export default {
     z-index:10;
     text-align: justify;
     @include for-600 {    
-         width:90%;
-         font-size:5vw;
-         top:45%;
-      }
+      width:90%;
+      font-size:5vw;
+      top:45%;
+    }
   }
  
   #createWord{

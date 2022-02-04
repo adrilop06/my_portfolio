@@ -1,40 +1,42 @@
 <template>
-<div class="container-skills">
-  <h2 id="sk-section">&#60;&#47;SKILLS&#62;</h2>
-<div class="container-cards-skills">
-  <div class="card-skills">
-    <div class="face face1">
-      <div class="content-skills">
-        <chart-web></chart-web>
+<div v-cloak class="container-skills">
+  <div class="contain">
+    <h2 id="sk-section">&#60;&#47;SKILLS&#62;</h2>
+    <div class="container-cards-skills">
+      <div class="card-skills">
+        <div class="face face1">
+          <div class="content-skills">
+            <chart-web></chart-web>
+          </div>
+        </div>
+        <div class="face face2">
+          <h2><i class ="fas fa-laptop-code"></i></h2>
+        </div>
       </div>
-    </div>
-    <div class="face face2">
-      <h2><i class ="fas fa-laptop-code"></i></h2>
-    </div>
-  </div>
 
-  <div class="card-skills">
-    <div class="face face1 ">
-      <div class="content-skills">
-       <chart-game></chart-game>
+      <div class="card-skills">
+        <div class="face face1 ">
+          <div class="content-skills">
+          <chart-game></chart-game>
+          </div>
+        </div>
+        <div class="face face2">
+          <h2><i class="fas fa-gamepad"></i>  </h2>
+        </div>
       </div>
-    </div>
-    <div class="face face2">
-      <h2><i class="fas fa-gamepad"></i>  </h2>
-    </div>
-  </div>
 
-  <div class="card-skills">
-    <div class="face face1">
-      <div class="content-skills">
-        <chart-design></chart-design>
+      <div class="card-skills">
+        <div class="face face1">
+          <div class="content-skills">
+            <chart-design></chart-design>
+          </div>
+        </div>
+        <div class="face face2">
+          <h2><i class="far fa-edit"></i></h2>
+        </div>
       </div>
     </div>
-    <div class="face face2">
-      <h2><i class="far fa-edit"></i></h2>
-    </div>
   </div>
-</div>
 </div>
 </template>
 <script>
@@ -70,10 +72,15 @@ export default {
     max-width: 100%;
     height: auto;
     position: relative;
-    background: url('../../../images/backgroundimage.png');
-    margin-top:-5%;
+    margin-top:-10%;
     z-index:10000000000001;
     overflow: hidden;
+    background-color: #0B0314;
+  }
+  .contain{
+    max-width: 100%;
+    height: auto;
+    background: url('../../../images/backgroundimage.png');
   }
   
   #sk-section{
