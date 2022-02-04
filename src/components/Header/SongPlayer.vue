@@ -14,6 +14,7 @@ export default {
         return {
               icon: 'Play',
               sound:false
+              
         }
     },
    
