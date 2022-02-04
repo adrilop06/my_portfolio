@@ -1,6 +1,6 @@
 <template>
     <div class="container-wave">
-      <name-header class="name-title"></name-header> 
+      
     <div class="retro">
     <div class="lines">
         <div class="line"></div>
@@ -59,15 +59,20 @@
 </template>
 <script>
 
-import NameHeader from "../Header/NameHeader.vue"
+
+
 export default {
     name:'Wave',
-    components: {NameHeader},
+    
+
+    
+    
 }
 </script>
 
 <style lang="scss" scoped>
- 
+  
+  
   .name-title{
     z-index:1000000;
   }

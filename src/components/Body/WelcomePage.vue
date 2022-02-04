@@ -3,7 +3,7 @@
     <div class="container-welcome">
       <div class="about">&#60;ABOUT ME&#47;&#62;</div>
       <h3 id="hi-title">Hi <span id="world">World!</span></h3>
-      <div class="text-intro"><p id="presentation-text">This is Adrián <span id="last-name">López</span>, a <span id="createWord">creative Multimedia designer</span> from Spain based in Austin, Texas. Currently, i´m studing my last year at the University Oberta of Catalonia. My  specialties are web and software engineering, with passion for graphic design.
+      <div class="text-intro"><p id="presentation-text">This is Adrián <span id="last-name">López</span>, a <span id="createWord">creative Multimedia designer</span> from Spain based in Austin, Texas. Currently, I´m studing my last year at University Oberta of Catalonia. My specialties are web and software engineering, with passion for graphic design.
       </p></div>
       <div id="my-photo"><photo></photo></div>
     

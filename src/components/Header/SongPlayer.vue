@@ -1,6 +1,6 @@
 <template>
 <div>
-    <audio id="audio-player"  preload loop autoplay>
+    <audio id="audio-player"  preload loop>
         <source src="../../../songs/song.mp3" type="audio/mp3"/>
     </audio>
     

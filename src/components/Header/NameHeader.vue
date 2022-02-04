@@ -13,16 +13,14 @@
 <script>
 export default {
     name:'NameHeader',
+
     
 }
 </script>
 <style  lang="scss" scoped>
-    @font-face {
-        font-family: 'RoadRage';
-        font-style: normal;
-        font-weight: normal;
-        src: local('RoadRage'), url('https://coding-dude.com/wp/wp-content/uploads/Road_Rage.woff') format('woff') ;
-    }
+   
+
+    @import url('http://fonts.cdnfonts.com/css/road-rage');
     @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
     @import url(https://fonts.googleapis.com/css?family=Titillium+Web:900);
     @import url(https://fonts.googleapis.com/css?family=Mr+Dafoe);
@@ -84,6 +82,7 @@ export default {
                 top:90%;
                 left:50%;
                 animation: giggle 1s ease infinite;
+               
             }
            
         }
