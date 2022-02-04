@@ -21,7 +21,7 @@ export default {
 <style  lang="scss" scoped>
    
 
-    @import url('http://fonts.cdnfonts.com/css/road-rage');
+    @import url('https://fonts.cdnfonts.com/css/road-rage');
     @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
     @import url(https://fonts.googleapis.com/css?family=Titillium+Web:900);
     @import url(https://fonts.googleapis.com/css?family=Mr+Dafoe);
@@ -133,8 +133,6 @@ export default {
                 text-align:center;
                 pointer-events: none;   
             }
-          
-         
             .last-name{
                 color: #d100b1;
                 font-family: 'Road Rage', sans-serif;
